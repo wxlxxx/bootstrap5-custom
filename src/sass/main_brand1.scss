@@ -1,0 +1,12 @@
+@import "./variables/brand1";
+@import "./common";
+// 字体
+.wf-active body {
+  font-family: Muli, $font-family-base;
+}
+// 按钮
+.btn-primary,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  color: $white;
+}

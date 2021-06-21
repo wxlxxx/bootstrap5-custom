@@ -1,0 +1,114 @@
+<h3 id="gdpr">GDPR banner</h3>
+<div class="bg-light p-4 mb-5">
+  <p>step1:</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">body</span> <span class="s">data-plugins="gdpr"</span><span class="p">&gt;</span>
+  </code></pre></div>
+  <p>step2:</p>
+  <p>模板：</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p nt">&lt;</span>div id="cookies-eu-banner" class="bg-light text-center tiny py-1" style="display: none;"<span class="p nt">&gt;</span>
+      This site uses cookies. By continuing to use this site you agree to our use of cookies in accordance with our
+      <span class="p nt">&lt;</span>a href="/cookies-privacy.html" target="_blank" id="cookies-eu-more"<span class="p nt">&gt;</span>Cookie Policy<span class="p nt">&lt;</span>/a<span class="p nt">&gt;</span>
+      <span class="p nt">&lt;</span>button id="cookies-eu-reject" class="btn btn-sm btn-link py-0"<span class="p nt">&gt;</span>Reject<span class="p nt">&lt;</span>/button<span class="p nt">&gt;</span>
+      <span class="p nt">&lt;</span>button id="cookies-eu-accept" class="btn btn-sm btn-link py-0"<span class="p nt">&gt;</span>Accept<span class="p nt">&lt;</span>/button<span class="p nt">&gt;</span>
+    <span class="p nt">&lt;</span>/div<span class="p nt">&gt;</span>
+  </code></pre></div>
+</div>
+<h3 id="swiper">Swiper</h3>
+<div class="p-4">
+  <div class="swiper-container mySwiperDemo">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="py-5 text-center">Slide 1</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="py-5 text-center">Slide 2</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="py-5 text-center">Slide 3</div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script>
+    window.addEventListener('swiperLoad', function(){
+      var swiper = new Swiper(".mySwiperDemo", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    })
+  </script>
+  <div class="bg-light py-4">
+    <p>step1:</p>
+    <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+      <span class="p">&lt;</span><span class="nt">body</span> <span class="s">data-plugins="swiper"</span><span class="p">&gt;</span>
+    </code></pre></div>
+    <p>step2:</p>
+    <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+      window.addEventListener('swiperLoad', function(){
+        var swiper = new Swiper(...);
+      })
+    </code></pre></div>
+    <p>step3:</p>
+    <p class="ps-5"><a href="https://swiperjs.com/demos" target="_blank">Swiper官方文档</a></p>
+  </div>
+</div>
+<h3 id="seasonal-banner">Seasonal Banner</h3>
+<div class="p-4">
+  <p>step1:</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">body</span> <span class="s">data-plugins="seasonalBanner"</span><span class="p">&gt;</span>
+  </code></pre></div>
+  <p>step2:</p>
+  <p>模板：</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p nt">&lt;</span>div <span class="s">data-toggle</span>="seasonal-banner" <span class="s">data-target</span>="目标地址" <span class="s">data-banner</span>="图片地址" <span class="s">data-mobile-banner</span>="移动端图片地址" <span class="s">data-always-show</span>="false" <span class="s">data-cookie-mark</span>="tt"<span class="p nt">&gt;</span><span class="p nt">&lt;</span>/div<span class="p nt">&gt;</span>
+  </code></pre></div>
+</div>
+<h3 id="disqus">Disqus</h3>
+<div class="p-4">
+  <p>step1:</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">body</span> <span class="s">data-plugins="disqus"</span><span class="p">&gt;</span>
+  </code></pre></div>
+  <p>step2:</p>
+  <p>模板：</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p nt">&lt;</span>div <span class="s">data-toggle</span>="disqus" <span class="s">data-disqus-host</span>="xxx.disqus.com"<span class="p nt">&gt;</span><span class="p nt">&lt;</span>/div<span class="p nt">&gt;</span>
+  </code></pre></div>
+</div>
+<h3 id="popup-form">Popup Form</h3>
+<div class="p-4">
+  <p>step1:</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">body</span> <span class="s">data-plugins="popupform,sweetalert2"</span><span class="p">&gt;</span>
+  </code></pre></div>
+  <p>step2:</p>
+  <p>模板：</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p nt">&lt;</span>div <span class="s">data-popupform-template</span>="popupform1"<span class="p nt">&gt;</span>
+      <span class="p nt">&lt;</span>title<span class="p nt">&gt;</span>Form Title<span class="p nt">&lt;</span>/title<span class="p nt">&gt;</span>
+      <span class="p nt">&lt;</span>input type="text" name="..." placeholder="..." label="..." required<span class="p nt">&gt;</span>
+      <span class="p nt">&lt;</span>input type="email" name="..." placeholder="..." label="..." required<span class="p nt">&gt;</span>
+      ...
+    <span class="p nt">&lt;</span>/div<span class="p nt">&gt;</span>
+  </code></pre></div>
+  <p>step3:</p>
+  <p>使用：</p>
+  <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+    <span class="p nt">&lt;</span>a href="javascript:;" <span class="s">data-togglet</span>="popupForm" <span class="s">data-target</span>="popupform1"<span class="p nt">&gt;</span>Click me!<span class="p nt">&lt;</span>/div<span class="p nt">&gt;</span>
+  </code></pre></div>
+  <p>效果：</p>
+  <div>
+    <a href="javascript:;" class="btn btn-primary" data-toggle="popupForm" data-target="popupform1">Click me!</a>
+  </div>
+</div>

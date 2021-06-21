@@ -1,0 +1,92 @@
+// 颜色系统
+$white:            #fff !default;
+$dark:          #1b2126 !default;
+$primary:       #00ab11 !default;
+$secondary:     #ed7507 !default;
+$info:          #2b3f65 !default;
+$danger:        #ea5555 !default;
+$body-color:      $dark !default;
+$headings-color:  $dark !default;
+$primary-color-list: #ddebdd, #b3deb1, #7dd17d, #4fc452, #25b82f, #00ab11, #008512, #005e10, #00380b, #001204;
+$secondary-color-list: #fffaf0, #ffeac9, #ffd599, #ffbb69, #fa9c37, #ed7507, #c75a00, #a14300, #7a2f00, #541d00;
+$info-color-list: #9ca1a6, #858f99, #6b7a8c, #536580, #3e5273, #2b3f65, #182540, #080d1a, #000, #000;
+$gray-100: #f7f9fa !default; /* light color */
+$gray-200: #fafafa !default;
+$gray-300: #ededed !default;
+$gray-400: #e1e1e1 !default; /* border color */
+$gray-500: #a6a6a6 !default;
+$gray-600: #666 !default; /* muted color */
+$gray-700: #404040 !default;
+$gray-800: #1a1a1a !default;
+$gray-900: #000 !default;
+$custom-theme-colors: (
+  "purchase":     $primary,
+  "gray":         $gray-300,
+  "white":        $white,
+  "custom-1":     #eaf2fd,
+  "custom-2":     #fff9e6,
+  "custom-3":     #feeef2,
+  "custom-4":     #f5fff6
+) !default;
+// 字重
+$headings-font-weight:        600 !default;
+// 标题
+$h1-font-size:                3.375rem !default;
+$h2-font-size:                2.5rem !default;
+$h3-font-size:                1.5rem !default;
+$h4-font-size:                1.375rem !default;
+$h6-font-size:                1.125rem !default;
+// 行高
+$line-height-base:            1.5 !default;
+$headings-line-height:        1.4 !default;
+// 边框
+$border-radius:               .5rem !default;
+$border-radius-sm:            .25rem !default;
+$border-radius-lg:            1rem !default;
+// 输入框
+$input-btn-border-width:         2px !default;
+$input-btn-focus-box-shadow:     none !default;
+$input-border-radius:            $border-radius-sm !default;
+// 按钮
+$btn-padding-y-lg:         1rem !default;
+$btn-padding-x-lg:         3rem !default;
+$btn-border-radius-lg:           4px !default;
+$btn-padding-y:            .75rem !default;
+$btn-padding-x:            3rem !default;
+$btn-border-radius:              4px !default;
+$btn-padding-y-sm:         .5rem !default;
+$btn-padding-x-sm:         1.5rem !default;
+$btn-border-radius-sm:           4px !default;
+// 阴影
+$box-shadow-sm:               0 12px 32px rgba(0, 0, 0, .1) !default;
+$box-shadow-lg:               0 16px 48px rgba(0, 0, 0, .15) !default;
+// 容器
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1440px
+) !default;
+// 表格
+$table-cell-padding-y:        1rem !default;
+$table-cell-padding-x:        1rem !default;
+$table-cell-padding-y-sm:     .5rem !default;
+$table-cell-padding-x-sm:     .5rem !default;
+$table-custom-variants: (
+  "bg-custom-1":   #eaf2fd,
+  "bg-custom-2":   #fff9e6,
+  "bg-custom-3":   #feeef2,
+  "bg-custom-4":   #f5fff6
+);
+// 组件
+$tooltip-arrow-color:         $white !default;
+$tooltip-bg:                  $white !default;
+$tooltip-color:               $body-color !default;
+$navbar-dark-color:           $white !default;
+$navbar-light-color:          $dark !default;
+$navbar-light-hover-color:          $primary !default;
+$navbar-nav-link-padding-x:         2rem !default;
+$footer-link-color: $gray-300 !default;
+$footer-title-color: $gray-300 !default;

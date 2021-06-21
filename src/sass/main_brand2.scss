@@ -1,0 +1,73 @@
+@import "./variables/brand2";
+@import "common";
+// 字体
+.wf-active body {
+  font-family: Muli, $font-family-base;
+}
+// 容器
+.container {
+  max-width: 1304px;
+}
+// 按钮
+.btn-primary,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  color: $white;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  color: $white;
+}
+.btn-white {
+  color: $primary;
+  &:hover {
+    background-color: $light;
+    border-color: $light;
+  }
+}
+.btn-outline-white {
+  color: $white;
+  border-color: $white;
+  &:hover {
+    color: $primary;
+    background-color: $white;
+  }
+}
+// 特殊
+.header form,
+.footer form,
+aside {
+  .btn{
+    padding: .375rem .75rem;
+  }
+}
+// 文章
+article {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  @include media-breakpoint-down(lg) {
+    h1 {
+      font-size: 38px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+  }
+}

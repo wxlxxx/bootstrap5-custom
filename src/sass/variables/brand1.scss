@@ -1,0 +1,71 @@
+// 颜色系统
+$white:              #fff !default;
+$primary:            #ff612e !default;
+$secondary:          #3f1685 !default;
+$info:               #2b2b58 !default;
+$dark:               #323232 !default;
+$warning:            #ffbe0e !default;
+$primary-color-list: #fff6f0, #ffe3d1, #ffc7a8, #ffa880, #ff8657, #ff612e, #d9451c, #b32c0e, #8c1904, #660e02;
+$secondary-color-list: #bfb9c4, #aa9cb8, #8e74ab, #72519e, #583191, #3f1685, #270b5e, #140438, #050012, #000;
+$info-color-list: #909199, #7d7f8c, #656780, #4f5273, #3c3e66, #2b2b58, #171633, #05050d, #000, #000;
+$gray-100: #f7f9fc !default; /* light color */
+$gray-200: #eee !default;
+$gray-300: #bfbfbf !default;
+$gray-400: #b3b3b3 !default; /* border color */
+$gray-500: #a6a6a6 !default;
+$gray-600: #666 !default; /* muted color */
+$gray-700: #737373 !default;
+$gray-800: #4d4d4d !default;
+$gray-900: #262626 !default;
+$custom-theme-colors: (
+  "purchase":     #ff612e,
+  "gray":         $gray-300,
+  "white":        $white
+) !default;
+$headings-color:            $info !default;
+$body-color:                $info !default;
+// 字重
+$headings-font-weight:        600 !default;
+// 标题
+$h6-font-size:                1.125rem !default;
+// 边框
+$border-radius:               .5rem !default;
+$border-radius-sm:            .25rem !default;
+$border-radius-lg:            1rem !default;
+// 输入框
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         1.375rem !default;
+$input-btn-focus-box-shadow: none !default;
+$input-border-radius:            $border-radius-sm !default;
+// 按钮
+$btn-border-radius:              $border-radius-sm !default;
+// 容器
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1440px
+) !default;
+// 表格
+$table-cell-padding-y:        1rem !default;
+$table-cell-padding-x:        1rem !default;
+$table-cell-padding-y-sm:     .5rem !default;
+$table-cell-padding-x-sm:     .5rem !default;
+$table-custom-variants: (
+  "bg-custom-1":   #eaf2fd,
+  "bg-custom-2":   #fff9e6,
+  "bg-custom-3":   #feeef2,
+  "bg-custom-4":   #f5fff6
+);
+// 组件
+$tooltip-arrow-color: $white !default;
+$tooltip-bg: $white !default;
+$tooltip-color: $body-color !default;
+$footer-link-color: #999 !default;
+$footer-title-color: #ccc !default;
+$navbar-light-color:          $info !default;
+$navbar-light-hover-color:          $primary !default;
+$navbar-nav-link-padding-x:         1.625rem !default;
+$navbar-padding-y:         .85rem !default;

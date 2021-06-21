@@ -1,0 +1,23 @@
+@import "./variables/brand3";
+@import "./common";
+
+// 字体
+.wf-active body {
+  font-family: Mulis, $font-family-base;
+}
+// 按钮
+.btn-primary,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  color: $white;
+}
+.btn-info,
+.btn-info:hover,
+.btn-outline-info:hover {
+  color: $white;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  color: $white;
+}

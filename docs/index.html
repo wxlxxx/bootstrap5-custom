@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RN UI</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/assets/css/docs.css">
+  </head>
+  <body data-sys="win" data-dev="desktop" data-plugins="sweetalert2,paddlecheckout,digicert,gdpr,swiper,seasonalBanner,disqus,popupform">
+    <aside>
+      <div id="cookies-eu-banner" class="bg-light text-center tiny py-1" style="display: none;">
+          This site uses cookies. By continuing to use this site you agree to our use of cookies in accordance with our
+          <a href="/cookies-privacy.html" target="_blank" id="cookies-eu-more" class="me-3">Cookie Policy</a>
+          <button id="cookies-eu-reject" class="btn btn-sm btn-link py-0">Reject</button>
+          <button id="cookies-eu-accept" class="btn btn-sm btn-link py-0">Accept</button>
+      </div>
+      <div data-toggle="seasonal-banner" data-target="https://source.unsplash.com/" data-banner="https://source.unsplash.com/random/1920x80" data-mobile-banner="https://source.unsplash.com/random/500x80" data-always-show="true" data-cookie-mark="20210527"></div>
+      <div data-popupform-template="popupform1" class="d-none">
+        <action>https://api.xxx.com/</action>
+        <title>Form Title</title>
+        <input type="text" class="form-control" name="name" placeholder="Your Name *" label="" required="true">
+        <input type="email" class="form-control" name="email" placeholder="Your Email *" label="" required="true">
+        <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" label="">
+        <input type="text" class="form-control" name="company" placeholder="Your Company *" label="" required="true">
+        <input type="hidden" name="site_id" value="3">
+        <input type="hidden" name="product_id" value="213">
+        <select class="form-select" name="platform_id" label="" required="true" fluid="true" >
+          <option value="1" selected>Windows Version</option>
+          <option value="2">Mac Version</option>
+        </select>
+        <textarea class="form-control" name="requirement" placeholder="Please add your requirement, like how many PCs/Macs or devices you will need. *" label="" required="true" fluid="true"></textarea>
+        <button type="submit" class="btn btn-primary d-block mx-auto" fluid="true">Submit</button>
+        <success>submit success</success>
+        <fail>submit fail</fail>
+      </div>
+    </aside>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="#">RN-UI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"><%= brand %></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                切换品牌
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index-brand1.html">brand1</a></li>
+                <li><a class="dropdown-item" href="index-brand2.html">brand2</a></li>
+                <li><a class="dropdown-item" href="index-brand3.html">brand3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-xxxl my-md-4 bd-layout">
+      <%= require('html-loader!./template/sidebar.html') %>
+      <main>
+        <div class="py-5 container-xl">
+          <h2 class="mb-4" id="starter-template">Starter template</h2>
+          <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+            <span class="cp">&lt;!doctype html&gt;</span>
+            <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- Required meta tags --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- Brand CSS --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.xxx.com/rn-ui/css/rn-ui-<%= brand %>-<%= version %>.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello, RN-UI!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, RN-UI!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- Brand JS --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.xxx.com/rn-ui/js/rn-ui-<%= brand %>-<%= version %>.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+          </code></pre></div>
+          <h2 class="my-4" id="typography">Typography 排版</h2>
+          <%= require('html-loader!./template/typography.html') %>
+          <h2 class="my-4" id="components">Components 组件</h2>
+          <%= require('html-loader!./template/components.html') %>
+          <h2 class="my-4" id="plugins">Plugins 插件</h2>
+          <%= require('html-loader!./template/plugins.html') %>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
